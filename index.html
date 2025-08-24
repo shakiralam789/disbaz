@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coming Soon - Amazing Gifts Website with Modern Design">
+    <title>Disbaz - Coming Soon</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+<body>
+    <!-- Advanced Background Effects -->
+    <div class="bg-effects">
+        <canvas id="bg-canvas"></canvas>
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+        </div>
+        <div class="mesh-gradient"></div>
+    </div>
+    
+    <!-- Enhanced Particle System -->
+    <div id="particles"></div>
+    <div class="floating-elements">
+        <div class="float-element gift-icon">🎁</div>
+        <div class="float-element star-icon">✨</div>
+        <div class="float-element heart-icon">💝</div>
+        <div class="float-element sparkle-icon">⭐</div>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Modern Hero Section -->
+        <section class="hero-section">
+            <!-- Dynamic Background -->
+            <div class="hero-background">
+                <div class="gradient-mesh"></div>
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+                <div class="aurora-lines"></div>
+            </div>
+            
+            <!-- Hero Content Container -->
+            <div class="hero-container">
+                <!-- Brand Section -->
+                <div class="brand-section">
+                    <div class="brand-logo">
+                        <span class="logo-mark">D</span>
+                        <div class="logo-text">DISBAZ</div>
+                    </div>
+                    <div class="brand-tagline">Where Every Gift Tells a Story</div>
+                </div>
+                
+                <!-- Main Hero Content -->
+                <div class="hero-main">
+                    <h1 class="hero-headline">
+                        <span class="headline-accent">The Future of</span>
+                        <span class="headline-primary">Gifting</span>
+                        <span class="headline-sub">Is Almost Here</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Experience a revolutionary platform that transforms how you discover, 
+                        choose, and share meaningful gifts with the people you love.
+                    </p>
+                    
+                    <!-- Action Section -->
+                    <div class="hero-actions">
+                        <button class="btn-primary">
+                            <span class="btn-icon">🚀</span>
+                            <span class="btn-label">Get Early Access</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button class="btn-secondary">
+                            <span class="btn-label">Watch Demo</span>
+                            <span class="btn-icon">▶</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <span class="badge-number">15K+</span>
+                            <span class="badge-text">Early Adopters</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-number">4.9★</span>
+                            <span class="badge-text">App Preview</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-number">100+</span>
+                            <span class="badge-text">Gift Categories</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual Element -->
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="gift-preview">
+                                <div class="gift-box">🎁</div>
+                                <div class="gift-sparkles">
+                                    <span class="sparkle">✨</span>
+                                    <span class="sparkle">⭐</span>
+                                    <span class="sparkle">💫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modern Scroll Indicator -->
+            <div class="scroll-hint">
+                <div class="scroll-line"></div>
+                <span class="scroll-label">Discover More</span>
+            </div>
+        </section>
+        
+        <!-- ... existing sections ... -->
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <div class="glass-card countdown-card">
+                <h2 class="countdown-title">Launch Countdown</h2>
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <span class="time-number" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Preview -->
+        <section class="features-section">
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Curated Gifts</h3>
+                    <p>Handpicked premium gifts for every occasion</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI Recommendations</h3>
+                    <p>Smart suggestions based on preferences</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>Carefully selected high-quality gifts</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Email Subscription -->
+        <section class="subscription-section">
+            <div class="glass-card subscription-card">
+                <h2 class="subscription-title">Be the First to Know</h2>
+                <p class="subscription-subtitle">Get notified when we launch and receive exclusive early access</p>
+                
+                <form class="subscription-form" id="emailForm">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Notify Me</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </div>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="glass-card footer-card no-animation">
+            <p>&copy; 2025 Disbaz. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
