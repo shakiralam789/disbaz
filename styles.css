@@ -93,15 +93,20 @@ body {
 }
 
 @keyframes float-orb {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
     }
+
     25% {
         transform: translate(30px, -50px) scale(1.1);
     }
+
     50% {
         transform: translate(-20px, -30px) scale(0.9);
     }
+
     75% {
         transform: translate(40px, 20px) scale(1.05);
     }
@@ -114,7 +119,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
+    background:
         radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
@@ -122,8 +127,15 @@ body {
 }
 
 @keyframes mesh-shift {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.6; }
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
 }
 
 /* Enhanced Particles */
@@ -184,12 +196,15 @@ body {
         transform: translateY(0) rotate(0deg);
         opacity: 0;
     }
+
     10% {
         opacity: 0.6;
     }
+
     90% {
         opacity: 0.6;
     }
+
     100% {
         transform: translateY(-100px) rotate(360deg);
         opacity: 0;
@@ -203,7 +218,7 @@ body {
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
-    box-shadow: 
+    box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -228,7 +243,7 @@ body {
 
 .glass-card:hover {
     transform: translateY(-8px);
-    box-shadow: 
+    box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.2);
@@ -272,7 +287,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: 
+    background:
         radial-gradient(circle at 25% 25%, rgba(120, 119, 198, 0.4) 0%, transparent 40%),
         radial-gradient(circle at 75% 75%, rgba(255, 119, 198, 0.3) 0%, transparent 40%),
         radial-gradient(circle at 50% 50%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
@@ -281,8 +296,13 @@ body {
 }
 
 @keyframes mesh-rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .floating-shapes {
@@ -326,12 +346,16 @@ body {
 }
 
 @keyframes float-shape {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px) translateX(0px) rotate(0deg);
     }
+
     33% {
         transform: translateY(-30px) translateX(20px) rotate(120deg);
     }
+
     66% {
         transform: translateY(20px) translateX(-15px) rotate(240deg);
     }
@@ -343,18 +367,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, 
-        transparent 40%, 
-        rgba(120, 119, 198, 0.1) 50%, 
-        transparent 60%);
+    background: linear-gradient(45deg,
+            transparent 40%,
+            rgba(120, 119, 198, 0.1) 50%,
+            transparent 60%);
     animation: aurora-flow 12s ease-in-out infinite;
 }
 
 @keyframes aurora-flow {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.3;
         transform: translateX(-100px);
     }
+
     50% {
         opacity: 0.8;
         transform: translateX(100px);
@@ -391,37 +418,15 @@ body {
     margin-bottom: 1rem;
 }
 
-.logo-mark {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-radius: 16px;
+.brand-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-    position: relative;
-    overflow: hidden;
+    margin-top: 1rem;
 }
 
-.logo-mark::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    animation: logo-shine 3s ease-in-out infinite;
-}
-
-@keyframes logo-shine {
-    0%, 100% { left: -100%; }
-    50% { left: 100%; }
+.brand-logo img {
+    width: 260px;
 }
 
 .logo-text {
@@ -502,8 +507,15 @@ body {
 }
 
 @keyframes gradient-shift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .hero-description {
@@ -662,13 +674,16 @@ body {
 }
 
 @keyframes card-pulse {
-    0%, 100% { 
-        opacity: 0.4; 
-        transform: scale(1); 
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: scale(1);
     }
-    50% { 
-        opacity: 0.8; 
-        transform: scale(1.05); 
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
     }
 }
 
@@ -687,11 +702,28 @@ body {
 .gift-box {
     font-size: 6rem;
     animation: gift-bounce 3s ease-in-out infinite;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift-box svg {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 @keyframes gift-bounce {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-10px) scale(1.05); }
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.05);
+    }
 }
 
 .gift-sparkles {
@@ -727,10 +759,13 @@ body {
 }
 
 @keyframes sparkle-float {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.6;
         transform: translateY(0) rotate(0deg) scale(1);
     }
+
     50% {
         opacity: 1;
         transform: translateY(-15px) rotate(180deg) scale(1.2);
@@ -744,18 +779,52 @@ body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.scroll-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: rgba(255, 255, 255, 0.6);
+}
+
+.social-icons-left,
+.social-icons-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.scroll-social-icon {
+    width: 24px;
+    height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.scroll-social-icon:hover {
+    color: #ff6b9d;
+    transform: translateY(-2px);
+}
+
+.scroll-social-icon svg {
+    width: 100%;
+    height: 100%;
 }
 
 .scroll-line {
     width: 2px;
     height: 40px;
-    background: linear-gradient(to bottom, 
-        rgba(255, 255, 255, 0.8) 0%, 
-        rgba(255, 255, 255, 0.2) 100%);
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.2) 100%);
     border-radius: 1px;
     position: relative;
     overflow: hidden;
@@ -768,15 +837,20 @@ body {
     left: 0;
     width: 100%;
     height: 20px;
-    background: linear-gradient(to bottom, 
-        rgba(102, 126, 234, 0.8) 0%, 
-        transparent 100%);
+    background: linear-gradient(to bottom,
+            rgba(102, 126, 234, 0.8) 0%,
+            transparent 100%);
     animation: scroll-move 2s ease-in-out infinite;
 }
 
 @keyframes scroll-move {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(200%); }
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(200%);
+    }
 }
 
 .scroll-label {
@@ -912,6 +986,9 @@ body {
 
 .subscription-form {
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .input-group {
@@ -957,6 +1034,7 @@ body {
     overflow: hidden;
     transition: all 0.3s ease;
     min-width: 140px;
+    text-decoration: none;
 }
 
 .submit-btn:hover {
@@ -1038,6 +1116,8 @@ body {
 .social-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-link {
@@ -1062,18 +1142,18 @@ body {
         text-align: center;
         gap: 2rem;
     }
-    
+
     .hero-main {
         grid-column: 1;
         max-width: none;
         text-align: center;
     }
-    
+
     .hero-visual {
         grid-column: 1;
         margin-top: 2rem;
     }
-    
+
     .visual-card {
         width: 280px;
         height: 280px;
@@ -1084,67 +1164,71 @@ body {
     .main-container {
         padding: 1rem;
     }
-    
+
     .hero-container {
         padding: 0 1rem;
         min-height: 80vh;
     }
-    
+
     .hero-headline {
         font-size: 3.8rem;
     }
-    
+
     .logo-text {
         font-size: 1.5rem;
     }
-    
+
     .logo-mark {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
     }
-    
+
     .hero-actions {
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         width: 100%;
         max-width: 280px;
     }
-    
+
     .trust-badges {
         justify-content: center;
     }
-    
+
     .visual-card {
-        width: 240px;
-        height: 240px;
+        width: 260px;
+        height: 260px;
     }
-    
+
     .gift-box {
         font-size: 4rem;
+        width: 260px;
+        height: 260px;
     }
-    
+
     .countdown-timer {
         gap: 0.5rem;
     }
-    
+
     .time-number {
         font-size: 2rem;
     }
-    
+
     .input-group {
-        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
     }
-    
+
     #email {
         min-width: auto;
     }
-    
+
     .footer-card {
         flex-direction: column;
         text-align: center;
@@ -1155,55 +1239,72 @@ body {
     .hero-headline {
         font-size: 3.2rem;
     }
-    
+
     .headline-accent {
         font-size: 1rem;
     }
-    
+
     .headline-sub {
         font-size: 1.8rem;
     }
-    
+
     .hero-description {
         font-size: 1.1rem;
     }
-    
+
     .logo-text {
         font-size: 1.2rem;
     }
-    
+
     .brand-logo {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .trust-badges {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .badge {
         min-width: 200px;
     }
-    
+
     .visual-card {
-        width: 200px;
-        height: 200px;
+        width: 50px;
+        height: 50px;
     }
-    
+
     .gift-box {
         font-size: 3rem;
+        width: 50px;
+        height: 50px;
     }
     
+    .scroll-hint {
+        gap: 1.5rem;
+        max-width: 350px;
+    }
+    
+    .scroll-social-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .social-icons-left,
+    .social-icons-right {
+        gap: 0.5rem;
+    }
+
     .countdown-title,
     .subscription-title {
         font-size: 2.2rem;
     }
-    
+
     .features-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .orb {
         filter: blur(40px);
     }

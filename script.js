@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initEmailForm();
     initAnimations();
     initMouseEffects();
+    initLottieGift();
 });
 
 // Background 3D Scene
@@ -402,3 +403,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Initialize Lottie Gift Animation
+function initLottieGift() {
+    const container = document.getElementById('lottie-gift');
+    if (container && typeof lottie !== 'undefined') {
+        const animation = lottie.loadAnimation({
+            container: container,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lottie/wrapped-gift.json',
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid meet',
+                clearCanvas: false,
+                progressiveLoad: false,
+                hideOnTransparent: true
+            }
+        });
+        
+        // Ensure transparent background
+        animation.addEventListener('DOMLoaded', function() {
+            const svgElement = container.querySelector('svg');
+            if (svgElement) {
+                svgElement.style.background = 'transparent';
+                svgElement.style.backgroundColor = 'transparent';
+            }
+        });
+        
+        // Optional: Add hover effects
+        container.addEventListener('mouseenter', function() {
+            animation.setSpeed(1.5);
+        });
+        
+        container.addEventListener('mouseleave', function() {
+            animation.setSpeed(1);
+        });
+    }
+}
