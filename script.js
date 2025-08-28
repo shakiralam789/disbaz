@@ -209,9 +209,8 @@ function initParticles() {
 
 // Initialize countdown timer
 function initCountdown() {
-    // Set launch date (30 days from now)
-    const launchDate = new Date();
-    launchDate.setDate(launchDate.getDate() + 30);
+    // Set fixed launch date (September 10, 2025 at 12:00 PM)
+    const launchDate = new Date('2025-09-12T12:00:00');
     
     function updateCountdown() {
         const now = new Date().getTime();
